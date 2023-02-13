@@ -1,0 +1,167 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  body{
+    font-family:  'Poppins', sans-serif;
+    background-color: #fdfaf3;
+    margin: 0.1rem;
+    font-size: 1rem;
+    padding: 0.01rem;
+    overflow-x: hidden;
+    width: 100vw;
+  }
+
+  /* header styling */
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    /* max-width: 100%; */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fdfaf3;
+   
+    
+    /* top: 0;
+    left: 0; */
+  }
+  
+  .title{
+    font-size: 20px;
+    margin: 0;
+    font-weight: 700;
+    cursor: pointer;
+    /* padding: 1rem; */
+
+      }
+      .title:hover{
+        color: #ff4d00;
+        transition: all 0.5s;
+      }
+  .bright{
+    border-right: 2px solid black;
+    padding: 1rem;
+  }
+  .resume{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    border-left: 2px solid black;
+    font-weight: 500;
+    padding: 1rem;
+  }
+
+  /* main component */
+  .main-component{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .left-component{
+    width: 60%;
+    border-right: 2px solid black;
+    height: 100vh;
+    
+  }
+  .chip-flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+  .chips{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0.35rem 1rem;
+    text-align: center;
+    border: 2px solid black;
+    min-width: 100px;
+    border-radius: 4rem;
+    cursor: pointer;
+  }
+  .chips:hover{
+    background-color: black;
+    color: #fdfaf3;
+    transition: all 0.3s;
+  }
+  .para,.list{
+    font-size: 15px;
+  }
+  .main-info{
+    border-bottom: 2px solid black;
+    padding:6rem 2rem 2rem 2rem;
+    margin-left: 0;
+    margin-top: -10px;
+    /* padding-top: 1rem; */
+  }
+  .main-text{
+    font-size: 17px;
+  }
+  .education,.Work-Experience{
+    border-bottom: 2px solid black;
+    padding:0.6rem 2rem 1rem 2rem;
+    margin-left: 0;
+  }
+  .social{
+    border-bottom: 2px solid black;
+    padding:0.6rem 2rem 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+
+  }
+  .socials-flex{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 1.5rem;
+  }
+  .social-img{
+    border: 2px solid black;
+    border-radius:100%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .social-img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .right-component{
+    width: 40%  ;
+    height: 100vh;
+    background-image: url(./assets/O161022.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+  @media only screen and (max-width:1100px){
+    .right-component,.left-component{
+      width: 50%;
+    }
+  }
+  @media only screen and (max-width:950px){
+    .main-component{
+      flex-direction: column-reverse;
+    }
+    .right-component,.left-component{
+      width: 95%;
+      
+    }
+    .chips{
+      font-size: 12px;
+    
+    min-width: 0px;
+    }
+    .main-info{
+      margin-top: 1rem;
+    }
+  }
